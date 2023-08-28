@@ -2,8 +2,8 @@ arr_test = [-1, 2, -3, 4, -6, 7]
 
 def merge_sort(arr):
     if len(arr) > 1:
-        left_arr = arr[len(arr) // 2 :]
-        right_arr = arr[: len(arr) // 2]
+        right_arr = arr[len(arr) // 2 :]
+        left_arr = arr[: len(arr) // 2]
         
         merge_sort(left_arr)
         merge_sort(right_arr)
@@ -32,4 +32,4 @@ def merge_sort(arr):
 # Test the code
 print("Original array:", arr_test) # Original array: [-1, 2, -3, 4, -6, 7]
 merge_sort(arr_test)
-print("Sorted array with negative numbers first:", arr_test) # Sorted array with negative numbers first: [-6, -3, -1, 7, 4, 2]
+print("Sorted array with negative numbers first:", arr_test) # Sorted array with negative numbers first: [-1, -3, -6, 2, 4, 7]
